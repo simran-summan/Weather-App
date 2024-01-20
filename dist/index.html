@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-900 m-auto flex justify-center">
+    <div
+      class="card text-white bg-gradient-to-b from-sky-400 to-blue-600 mt-[90px] rounded-lg"
+    >
+      <div class="search flex mx-20 my-14">
+        <input
+          type="search"
+          name="city"
+          id="cityName"
+          placeholder=" Enter a location"
+          class="rounded-md mr-1 w-80 h-10 pl-2 text-black"
+        />
+        <button class="bg-white hover:bg-gray-400 duration-100 rounded-full">
+          <img
+            src="../img/search-img.png"
+            alt=""
+            class="w-10 h-10 p-1 opacity-80 rounded-full" />
+        </button>
+      </div>
+      <div
+        class="error text-center text-red-800 font-semibold text-2xl my-6 hidden" >
+        Invalid location
+      </div>
+      <div class="weather-section hidden h-[460px] w-[500px]">
+        <div class="weather my-5">
+          <img src="../img/weather icon.png" alt="" class="w-36 m-auto py-2" />
+          <h1 class="temp text-center text-6xl font-semibold my-2">22°c</h1>
+          <h1 class="name text-center text-4xl font-semibold">New york</h1>
+        </div>
+        <div class="details flex justify-between text-xl mt-9">
+          <div class="col justify-start ml-28">
+            <img class="w-16 opacity-70" src="../img/humidit.png" alt="" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col justify-end mr-28">
+            <img class="w-16 opacity-70" src="../img/wind2.png" alt="" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
